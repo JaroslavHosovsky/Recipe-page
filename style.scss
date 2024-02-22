@@ -86,17 +86,15 @@ main {
       }
 
       li:before {
-        content: ""; /* Přidání obsahu pro pseudo-element */
-        position: absolute; /* Nastavení absolutní pozice pro pseudo-element */
-        left: -23px; /* Zarovnání pseudo-elementu na začátek položky seznamu */
-        top: 50%; /* Posunutí pseudo-elementu o 50% vzhledem k horní hraně položky */
-        transform: translateY(
-          -50%
-        ); /* Vertikální vycentrování pseudo-elementu */
-        width: 5px; /* Šířka bullet pointu */
-        height: 5px; /* Výška bullet pointu */
-        background-color: black; /* Barva bullet pointu */
-        border-radius: 50%; /* Zaoblení hran bullet pointu pro vytvoření kruhu */
+        content: "";
+        position: absolute;
+        left: -23px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 5px;
+        height: 5px;
+        background-color: black;
+        border-radius: 50%;
         background-color: $primary-color;
       }
     }
@@ -173,7 +171,6 @@ main {
 
 @media only screen and (min-width: 600px) {
   body {
-    // height: 100vh;
     margin: 75px 0;
 
     display: flex;
