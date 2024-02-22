@@ -1,0 +1,9 @@
+@mixin heading1 {
+  font-family: $font-young-serif;
+  font-size: 36px;
+  font-weight: 400;
+  margin-top: 35px;
+  margin-bottom: 24px;
+  line-height: 37px;
+  color: $heading-color;
+}

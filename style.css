@@ -1,0 +1,184 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+header {
+  margin-bottom: 25px;
+}
+header img {
+  width: 100%;
+  height: auto;
+}
+header .header-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 83%;
+  margin: auto;
+}
+header .header-text-container h1 {
+  font-family: "Young Serif", serif;
+  font-size: 36px;
+  font-weight: 400;
+  margin-top: 35px;
+  margin-bottom: 24px;
+  line-height: 37px;
+  color: hsl(24, 5%, 18%);
+}
+header .header-text-container p {
+  line-height: 24px;
+  margin-bottom: 15px;
+  color: hsl(30, 10%, 34%);
+}
+header .preparation-time {
+  background-color: hsl(322, 100%, 98%);
+  padding: 22px;
+  border-radius: 15px;
+}
+header .preparation-time p {
+  color: hsl(332, 51%, 32%);
+  font-size: 20px;
+  font-weight: bold;
+}
+header .preparation-time ul {
+  padding-left: 10px;
+}
+header .preparation-time ul li {
+  color: hsl(30, 10%, 34%);
+  margin-bottom: 13px;
+  list-style-position: inside;
+}
+header .preparation-time ul li::marker {
+  color: hsl(332, 51%, 32%);
+}
+
+main {
+  width: 83%;
+  margin: auto;
+}
+main .ingredients-section {
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(116, 113, 113, 0.34);
+  margin-bottom: 25px;
+}
+main .ingredients-section h2 {
+  font-family: "Young Serif", serif;
+  font-size: 25px;
+  color: hsl(14, 45%, 36%);
+  margin-bottom: 15px;
+}
+main .ingredients-section ul {
+  padding-left: 35px;
+}
+main .ingredients-section ul li {
+  margin-bottom: 10px;
+  list-style-type: none;
+  color: hsl(30, 10%, 34%);
+  position: relative;
+}
+main .ingredients-section ul li:before {
+  content: ""; /* Přidání obsahu pro pseudo-element */
+  position: absolute; /* Nastavení absolutní pozice pro pseudo-element */
+  left: -23px; /* Zarovnání pseudo-elementu na začátek položky seznamu */
+  top: 50%; /* Posunutí pseudo-elementu o 50% vzhledem k horní hraně položky */
+  transform: translateY(-50%); /* Vertikální vycentrování pseudo-elementu */
+  width: 5px; /* Šířka bullet pointu */
+  height: 5px; /* Výška bullet pointu */
+  background-color: black; /* Barva bullet pointu */
+  border-radius: 50%; /* Zaoblení hran bullet pointu pro vytvoření kruhu */
+  background-color: hsl(14, 45%, 36%);
+}
+main .instructions-section {
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(116, 113, 113, 0.34);
+  margin-bottom: 25px;
+}
+main .instructions-section h3 {
+  font-family: "Young Serif", serif;
+  font-size: 25px;
+  color: hsl(14, 45%, 36%);
+  margin-bottom: 15px;
+}
+main .instructions-section ol {
+  padding-left: 29px;
+}
+main .instructions-section ol li {
+  margin-bottom: 10px;
+  color: hsl(30, 10%, 34%);
+}
+main .nutrition-section {
+  margin-bottom: 45px;
+}
+main .nutrition-section h4 {
+  font-family: "Young Serif", serif;
+  font-size: 25px;
+  color: hsl(14, 45%, 36%);
+  margin-bottom: 15px;
+}
+main .nutrition-section p:first-of-type {
+  color: hsl(30, 10%, 34%);
+  margin-bottom: 20px;
+}
+main .nutrition-section table {
+  width: 100%;
+  padding-left: 25px;
+  border-collapse: collapse;
+}
+main .nutrition-section table tr:last-of-type {
+  border-bottom: none;
+}
+main .nutrition-section table tr {
+  border-bottom: 1px solid rgba(116, 113, 113, 0.34);
+}
+main .nutrition-section table tr td {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+main .nutrition-section table tr td:first-of-type {
+  padding-left: 42px;
+  color: hsl(30, 10%, 34%);
+}
+main .nutrition-section table tr td:last-child {
+  padding-right: 30px;
+  font-weight: bold;
+  color: hsl(14, 45%, 36%);
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    margin: 75px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 54%, 90%);
+  }
+  header {
+    padding: 35px;
+    max-width: 600px;
+    background-color: hsl(0, 0%, 100%);
+    margin: 0;
+    border-radius: 20px 20px 0 0;
+  }
+  header img {
+    border-radius: 20px;
+  }
+  header .header-text-container {
+    margin: 0;
+  }
+  main {
+    padding: 30px 30px 0 30px;
+    max-width: 600px;
+    background-color: hsl(0, 0%, 100%);
+    margin: 0;
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+  }
+  main .nutrition-section {
+    margin-bottom: 25px;
+  }
+}/*# sourceMappingURL=style.css.map */
